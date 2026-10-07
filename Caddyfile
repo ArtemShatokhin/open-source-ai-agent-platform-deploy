@@ -1,0 +1,22 @@
+# Caddyfile — reverse proxy and automatic TLS for a self-hosted, open-source Kortix instance.
+#
+# `kortix self-host init --domain <domain>` wires the bundled Caddy proxy up to
+# this shape. Keep it in version control so the routing and TLS behaviour of the
+# deployment is a reviewable change. Port numbers below match the services in
+# the generated docker-compose.yml; adjust them if you re-map a service.
+
+{
+	email {$KORTIX_ACME_EMAIL}
+}
+
+# Web app (agents, sessions, change requests).
+{$KORTIX_DOMAIN} {
+	encode zstd gzip
+	reverse_proxy frontend:3000
+}
+
+# API + LLM gateway.
+{$KORTIX_API_DOMAIN} {
+	encode zstd gzip
+	reverse_proxy kortix-api:8000
+}

@@ -1,6 +1,6 @@
 # VPC and on-prem deployment for open-source Kortix
 
-Run the open-source Kortix AI Management System inside a VPC or an on-prem network. It is the same Docker Compose stack as the production guide, with the domain pointed at an internal address and the network boundaries closed around it.
+Run the open-source Kortix AI Operating System inside a VPC or an on-prem network. It is the same Docker Compose stack as the production guide, with the domain pointed at an internal address and the network boundaries closed around it.
 
 Kortix keeps the control plane on your network: accounts, projects, repos, secrets, connectors, policies and the audit trail. Sessions run on a sandbox provider. For a fully isolated topology, the sandbox tier moves inside your network with the rest, scoped with the Kortix team.
 

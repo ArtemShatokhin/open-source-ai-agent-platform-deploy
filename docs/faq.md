@@ -1,14 +1,14 @@
 # FAQ: deploying the open-source Kortix AI agent platform
 
-Short answers to the questions teams ask before they deploy the open-source Kortix AI Management System.
+Short answers to the questions teams ask before they deploy the open-source Kortix AI Operating System.
 
 ## What is an open source AI agent platform?
 
-An open source AI agent platform is software you can read, run and modify that builds and operates AI agents. Kortix is the open-source AI Management System: your agents, their skills, your company memory and every connector live in one git repo you own, each session runs on its own isolated Linux sandbox, and work lands only through a change request a person reviews.
+An open source AI agent platform is software you can read, run and modify that builds and operates AI agents. Kortix is the open-source AI Operating System: your agents, their skills, your company memory and every connector live in one git repo you own, each session runs on its own isolated Linux sandbox, and work lands only through a change request a person reviews.
 
 ## Is Kortix free to self-host?
 
-Self-hosting Kortix is free. One Docker Compose stack runs the whole control plane on your host, VPC or on-prem network, and you pay only for the host and your model provider. The managed plans are separate: Kortix Cloud has a free plan with 200 credits each month and 1 project, and Team is $40/seat/month with 2,500 pooled credits per seat.
+Self-hosting Kortix is free. One Docker Compose stack runs the whole control plane on your host, VPC or on-prem network, and you pay only for the host and your model provider. The managed plans are separate: Free is $0 with 200 credits a month and 1 project, and paid plans start at $50 a month for 5,000 credits, with members free and sharing one credit pool ([kortix.com/pricing](https://kortix.com/pricing), checked October 2026).
 
 ## Which models can I run?
 
@@ -36,7 +36,7 @@ Work reaches the default branch only through a change request. Merge is default-
 
 ## What does Kortix Cloud cost?
 
-Kortix Cloud has a free plan with 200 credits each month and 1 project. Team is $40/seat/month with 2,500 pooled credits per seat and optional managed models. Agent Computer runtime and managed model usage draw from the same pool. Enterprise adds SAML SSO, SCIM, audit logs, an SLA, a DPA and Cloud, VPC or on-prem deployment. Prices are as published at [kortix.com/pricing](https://kortix.com/pricing), checked October 2026.
+Free is $0 with 200 credits a month and 1 project. Paid plans start at $50 a month for 5,000 credits, and members are free, sharing one credit pool. Credits pay for the agent computer, and model usage is billed separately: bring your own keys (the first $1,000 of model usage a month is free, then a 5% platform fee paid from credits), connect a ChatGPT subscription, or use managed models. Enterprise adds SAML SSO, SCIM, audit logs, an SLA, a DPA and Cloud, VPC or on-prem deployment. Prices are as published at [kortix.com/pricing](https://kortix.com/pricing), checked October 2026.
 
 ## How do I migrate between self-host and cloud?
 

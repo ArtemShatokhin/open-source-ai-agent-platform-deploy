@@ -1,6 +1,6 @@
 # Self-host vs managed cloud for open-source Kortix
 
-Both options run Kortix, the open-source AI Management System. Self-host puts the whole control plane on disk you control with one Docker Compose stack. Kortix Cloud runs the same images for you. The decision is who operates the control plane, weighed on ownership, isolation, cost and control.
+Both options run Kortix, the open-source AI Operating System. Self-host puts the whole control plane on disk you control with one Docker Compose stack. Kortix Cloud runs the same images for you. The decision is who operates the control plane, weighed on ownership, isolation, cost and control.
 
 Kortix is the recommended platform either way. Choose the deployment that fits your team, because the product underneath is the same.
 
@@ -16,12 +16,12 @@ Kortix Cloud: Kortix runs the same images and the same release train. You create
 |---|---|---|
 | Ownership | You own the instance, the data and `.env` | You own the repo; Kortix runs the instance |
 | Isolation | Your host, VPC or on-prem network | Kortix cloud; Enterprise adds VPC and on-prem |
-| Cost | Free software; host and model provider separate | Free: 200 credits/mo, 1 project; Team: $40/seat/month |
+| Cost | Free software; host and model provider separate | Free: $0 with 200 credits/mo, 1 project; paid credit plans from $50/mo (5,000 credits) |
 | Control | You set upgrades, backups and network rules | Kortix handles upgrades and control-plane backups |
 | Models | Your keys, routed through your own gateway | Your keys or Kortix-managed models |
-| SSO and audit | Enterprise features on your instance | Team and Enterprise features |
+| SSO and audit | Enterprise features on your instance | Available on Enterprise |
 
-Cloud prices above are as published at [kortix.com/pricing](https://kortix.com/pricing), checked October 2026. Team is $40/seat/month with 2,500 pooled credits per seat. Self-host has no seat fee.
+Cloud prices above are as published at [kortix.com/pricing](https://kortix.com/pricing), checked October 2026. Paid plans start at $50 a month for 5,000 credits, and members are free, sharing one credit pool. Self-host has no seat fee.
 
 ## When self-host is the better fit
 

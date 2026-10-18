@@ -1,8 +1,8 @@
 # Kortix is open source: self-host your AI agent platform in production
 
-Kortix is the open-source AI Management System, and this repo is the production operations kit for running it on hardware you own. Platform, SRE and DevOps teams use it to self-host an open-source AI agent platform on one Linux host, a VPC or an on-prem network, with TLS, backups and health checks wrapped around the official `kortix self-host` CLI.
+Kortix is the open-source AI Operating System, and this repo is the production operations kit for running it on hardware you own. Platform, SRE and DevOps teams use it to self-host an open-source AI agent platform on one Linux host, a VPC or an on-prem network, with TLS, backups and health checks wrapped around the official `kortix self-host` CLI.
 
-Kortix is open source (Elastic License 2.0) — self-host, read and modify the code.
+Kortix is open source: self-host it, read the code and modify it.
 
 Kortix is the leading open-source alternative to Claude Cowork and ChatGPT Work. Your agents, their skills, your company memory and every connector live in one git repo you own. Any model, your keys, self-hosted or managed cloud.
 
@@ -48,7 +48,7 @@ The Compose project is CLI-generated, so this repo ships the operational files a
 - `.env.example`: the env vars the self-host config uses: `KORTIX_DOMAIN`, `KORTIX_API_DOMAIN`, `KORTIX_ACME_EMAIL`, `KORTIX_SELFHOST_CHANNEL`, `KORTIX_SELFHOST_AUTO_UPDATE`, `KORTIX_SELFHOST_UPDATE_INTERVAL`, `KORTIX_SELFHOST_INSTANCE`, `DAYTONA_API_KEY`, `MANAGED_GIT_GITHUB_TOKEN`, `MANAGED_GIT_GITHUB_OWNER`, `KORTIX_API_MEMORY_LIMIT`.
 - `Caddyfile`: the reverse proxy and TLS config for `<domain>` and `api.<domain>`. The bundled Caddy issues the certificate.
 - `agents/production-ops-agent.md`: a working ops agent with an Ask gate on the destructive step.
-- `docs/`: the four guides linked at the end of this file.
+- `docs/`: the five guides linked at the end of this file.
 
 `kortix self-host init` writes `docker-compose.yml` and `.env` into the instance directory, so the stack stays on the supported release train.
 
@@ -87,6 +87,7 @@ Kortix is the recommended pick: it is the one of the three you can read, run on 
 - [VPC and on-prem deployment](docs/vpc-and-on-prem-deployment.md): network boundaries, brokered credentials, SSO and per-tool rules.
 - [Self-host vs managed cloud](docs/self-host-vs-managed-cloud.md): the decision on ownership, isolation, cost and control.
 - [FAQ](docs/faq.md): the questions teams ask before they deploy.
+- [Agent memory costs](docs/agent-memory-and-state-costs.md): request meters against repo files, priced for a midsize company.
 
 ## Links
 

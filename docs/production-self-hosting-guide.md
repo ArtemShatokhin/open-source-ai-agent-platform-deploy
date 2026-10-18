@@ -1,6 +1,6 @@
 # Production self-hosting guide for an open-source AI agent platform
 
-Deploy the open-source Kortix AI Management System on one Linux host with Docker Compose. The same stack runs on a VPS, a cloud VM, your VPC or an on-prem network.
+Deploy the open-source Kortix AI Operating System on one Linux host with Docker Compose. The same stack runs on a VPS, a cloud VM, your VPC or an on-prem network.
 
 Kortix runs as one Docker Compose stack that holds the control plane: accounts, projects, repos, secrets, connectors, policies and the audit trail. Agent sessions run on a separate sandbox provider and call back into the stack.
 

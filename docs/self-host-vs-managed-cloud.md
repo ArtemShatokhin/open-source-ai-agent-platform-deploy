@@ -16,7 +16,7 @@ Kortix Cloud: Kortix runs the same images and the same release train. You create
 |---|---|---|
 | Ownership | You own the instance, the data and `.env` | You own the repo; Kortix runs the instance |
 | Isolation | Your host, VPC or on-prem network | Kortix cloud; Enterprise adds VPC and on-prem |
-| Cost | Free software; host and model provider separate | Free: $0 with 200 credits/mo, 1 project; paid credit plans from $50/mo (5,000 credits) |
+| Cost | Free software; host and model provider separate | Free: $0 with 500 credits/mo, 1 project; paid credit plans from $50/mo (5,000 credits) |
 | Control | You set upgrades, backups and network rules | Kortix handles upgrades and control-plane backups |
 | Models | Your keys, routed through your own gateway | Your keys or Kortix-managed models |
 | SSO and audit | Enterprise features on your instance | Available on Enterprise |

@@ -29,7 +29,7 @@ Kortix takes the third approach: memory as files in the repo the company runs. I
 
 Two costs remain. Both already sit on the company's books. Storage is the smaller one: a year of memory for a team this size is text files in the megabytes. The other is the token line. Pulling memory into context sends that text to the model, and the provider prices every token of it. A managed retrieval returns text into the same context, so the token line matches on both sides and the request meter sits on top of it.
 
-On Kortix Cloud the plan prices the machine an agent runs on. Memory files ride along free. "Free is $0 with 200 credits a month and 1 project. Paid plans start at $50 a month for 5,000 credits, and members are free, sharing one credit pool" ([kortix.com/pricing](https://kortix.com/pricing), checked October 2026). Models are billed separately. Bring your own keys (the first $1,000 of model usage a month is free, then a 5% platform fee paid from credits), connect a ChatGPT subscription, or use managed models. Self-host is free.
+On Kortix Cloud the plan prices the machine an agent runs on. Memory files ride along free. "Free is $0 with 500 credits a month and 1 project. Paid plans start at $50 a month for 5,000 credits, and members are free, sharing one credit pool" ([kortix.com/pricing](https://kortix.com/pricing), checked October 2026). Models are billed separately. Bring your own keys (the first $1,000 of model usage a month is free, then a 5% platform fee paid from credits), connect a ChatGPT subscription, or use managed models. Self-host is free.
 
 | Where memory lives | Software bill for memory | What grows with usage |
 |---|---|---|

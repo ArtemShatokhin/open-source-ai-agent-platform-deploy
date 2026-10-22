@@ -8,7 +8,7 @@ Kortix keeps the control plane on your network: accounts, projects, repos, secre
 
 - Ingress: ports 80 and 443 on an internal load balancer or the host, with an A/AAAA record for `<domain>` and `api.<domain>`.
 - Control plane: `frontend`, `kortix-api`, `llm-gateway` and the Supabase data plane run on a private subnet. Postgres and storage have no public route.
-- Egress: the host needs outbound access to the sandbox provider (Daytona, Platinum or E2B) and to your model provider. Restrict it with a NAT gateway and an allowlist.
+- Egress: the host needs outbound access to the sandbox provider (Platinum or the legacy Daytona fallback) and to your model provider. Restrict it with a NAT gateway and an allowlist.
 - The sandbox provider is the one external dependency. A fully isolated topology moves the sandbox tier inside your network too.
 
 ## Why credentials never enter the machine

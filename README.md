@@ -38,7 +38,7 @@ kortix self-host configure
 
 Check `kortix self-host status`, `kortix self-host logs` and `kortix self-host doctor` while the stack starts. To evaluate with no domain, use `kortix self-host init --tunnel cloudflare` instead of step 3. The tunnel URL changes on every restart, so that mode is for evaluation, not production.
 
-The stack is the frontend, `kortix-api`, the `llm-gateway` and the Supabase distribution, behind Caddy. Agent sessions run on a separate sandbox provider outside this stack. Daytona is the default; Platinum and E2B are also supported.
+The stack is the frontend, `kortix-api`, the `llm-gateway` and the Supabase distribution, behind Caddy. Agent sessions run on a separate sandbox provider outside this stack. Platinum is the default; Daytona remains available as a legacy fallback.
 
 ## What is in this repo
 

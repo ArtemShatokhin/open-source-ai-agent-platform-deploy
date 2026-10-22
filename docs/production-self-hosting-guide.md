@@ -10,7 +10,7 @@ Kortix runs as one Docker Compose stack that holds the control plane: accounts, 
 - Docker Engine with the Compose plugin.
 - A DNS A/AAAA record for your domain and for `api.<domain>`, both pointing at the host.
 - Ports 80 and 443 open, so Caddy can issue the TLS certificate.
-- A sandbox provider key. Daytona is the default; Platinum and E2B are also supported.
+- A sandbox provider key. Platinum is the default; Daytona remains available as a legacy fallback.
 
 ## The compose stack
 
